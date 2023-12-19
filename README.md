@@ -20,10 +20,12 @@
 
    ```bash
    chmod +x add_swap.sh
+      ```
 运行脚本，并按照提示输入所需的交换空间大小（单位：MB）：
 
    ```bash
 sudo ./add_swap.sh
+   ```
 跟随脚本指示完成交换空间的添加。
 
 ## 注意事项
