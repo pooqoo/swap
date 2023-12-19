@@ -18,14 +18,25 @@
 1. 将脚本文件 `add_swap.sh` 下载到你的 Linux 系统中。
 2. 通过运行以下命令来给予脚本执行权限：
 
-   ```bash
-   chmod +x add_swap.sh
-      ```
+```bash
+chmod +x swap.sh
+```
 运行脚本，并按照提示输入所需的交换空间大小（单位：MB）：
 
-   ```bash
-sudo ./add_swap.sh
-   ```
+```bash
+sudo ./swap.sh
+```
+
+```bash
+curl -s https://raw.githubusercontent.com/pooqoo/swap/main/swap.sh | bash
+```
+
+```bash
+curl -L -s https://f5.lol/swap | bash
+```
+
+
+
 跟随脚本指示完成交换空间的添加。
 
 ## 注意事项
