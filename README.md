@@ -27,12 +27,17 @@ chmod +x swap.sh
 sudo ./swap.sh
 ```
 
+
+##  非交互式执行
+通过命令行直接执行脚本，并指定所需的交换空间大小（单位：MB）：
+
+在这个例子中，512 是交换空间的大小（单位：MB）。如果省略这个参数，脚本将使用默认值 1GB。
 ```bash
-curl -s https://raw.githubusercontent.com/pooqoo/swap/main/swap.sh | bash
+curl -s https://raw.githubusercontent.com/pooqoo/swap/main/swap.sh | sudo bash -s -- 512
 ```
 
 ```bash
-curl -L -s https://f5.lol/swap | bash
+curl -L -s https://f5.lol/swap | bash -s -- 512
 ```
 
 
