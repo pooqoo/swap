@@ -1,8 +1,14 @@
 #!/bin/bash
 
-# 提示用户输入交换文件的大小（单位：MB）
-echo -n "请输入交换文件的大小（单位：MB）: "
-read SWAP_SIZE_MB
+# 检查是否有提供参数（交换文件的大小）
+if [ $# -eq 0 ]; then
+    # 如果没有提供参数，则提示用户输入
+    echo -n "请输入交换文件的大小（单位：MB）: "
+    read SWAP_SIZE_MB
+else
+    # 如果提供了参数，则使用该参数
+    SWAP_SIZE_MB=$1
+fi
 
 # 将输入的MB转换为字节，以便fallocate使用
 SWAP_SIZE=${SWAP_SIZE_MB}M
